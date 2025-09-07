@@ -1,8 +1,8 @@
 import { defineConfig } from "@rsbuild/core";
 import { pluginReact } from "@rsbuild/plugin-react";
-
 export default defineConfig({
     plugins: [pluginReact()],
+
     module: {
         rules: [
             {
@@ -10,7 +10,10 @@ export default defineConfig({
                 use: ["postcss-loader"],
                 type: "css",
             },
-            // ...
         ],
+    },
+    html: {
+        title: "Links",
+        favicon: "./src/rspack.png",
     },
 });

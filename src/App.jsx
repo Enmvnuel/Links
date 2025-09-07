@@ -23,7 +23,7 @@ function App() {
                             Hello, My name is
                             <BlurText
                                 text="Enmanuel"
-                                delay={200}
+                                delay={300}
                                 animateBy="words"
                                 direction="top"
                                 onAnimationComplete={handleAnimationComplete}
